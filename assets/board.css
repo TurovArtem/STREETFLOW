@@ -1,0 +1,139 @@
+body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background-color: #f9f9f9;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        /* Стили для ссылки на главную */
+        .home-link {
+            display: inline-block;
+            margin-bottom: 30px;
+            text-decoration: none;
+            color: #2c3e50;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        
+        .home-link:hover {
+            color: #e74c3c;
+        }
+        
+        .home-link::before {
+            content: "←";
+            margin-right: 8px;
+        }
+        
+        /* Блок с контентом */
+        .content-wrapper {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 40px;
+            align-items: flex-start;
+        }
+        
+        /* Блок с фотографией */
+        .image-block {
+            flex: 1;
+            min-width: 300px;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .product-image {
+            width: 100%;
+            height: auto;
+            border-radius: 4px;
+            display: block;
+        }
+        
+        /* Блок с описанием */
+        .description-block {
+            flex: 1;
+            min-width: 300px;
+            background: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .product-title {
+            font-size: 28px;
+            margin-top: 0;
+            margin-bottom: 20px;
+            color: #2c3e50;
+        }
+        
+        .product-description {
+            font-size: 16px;
+            color: #555;
+            margin-bottom: 25px;
+        }
+        
+        /* Новый блок с ценой */
+        .price-block {
+            margin-top: 30px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border-left: 4px solid #e74c3c;
+        }
+        
+        .price-label {
+            font-size: 14px;
+            color: #7f8c8d;
+            margin-bottom: 5px;
+        }
+        
+        .price-value {
+            font-size: 32px;
+            font-weight: bold;
+            color: #2c3e50;
+        }
+        
+        .price-old {
+            font-size: 18px;
+            color: #95a5a6;
+            text-decoration: line-through;
+            margin-left: 10px;
+        }
+        
+        .price-currency {
+            font-size: 20px;
+        }
+        
+        .buy-button {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 12px 25px;
+            background-color: #e74c3c;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+        
+        .buy-button:hover {
+            background-color: #c0392b;
+        }
+        
+        @media (max-width: 768px) {
+            .content-wrapper {
+                flex-direction: column;
+            }
+            
+            .price-value {
+                font-size: 28px;
+            }
+        }
